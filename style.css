@@ -671,3 +671,136 @@ p {
     font-weight: 500;
     letter-spacing: 1px;
 }
+
+@media(max-width: 768px) {
+    
+    /* 1. Общие настройки и отступы */
+    .container {
+        padding: 0 15px !important;
+        width: 100% !important;
+    }
+
+    /* 2. Шапка сайта (Самый верхний блок) */
+    #verhn .container {
+        flex-direction: column !important;
+        gap: 15px !important;
+        height: auto !important;
+        padding: 15px 0 !important;
+    }
+
+    #verhn .menu {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+
+    /* 3. Первый экран (Блок #jum) */
+     #jum {
+        background-size: cover !important;
+        background-position: center !important;
+        position: relative;
+    }
+
+    #jum .container {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 40px 20px !important;
+        /* Добавляем полупрозрачный темный фон, чтобы текст не сливался с пластинками */
+        background: rgba(0, 0, 0, 0.6) !important; 
+        border-radius: 16px;
+        backdrop-filter: blur(4px);
+    }
+
+    #jum h1 {
+        font-size: 24px !important;
+        line-height: 1.4 !important;
+        color: #ffffff !important;
+        margin-bottom: 20px !important;
+    }
+    #jum .buttons {
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+    }
+
+    /* 4. Главный блок аукциона (#headblock) */
+    #headblock {
+        flex-direction: column !important;
+        gap: 25px !important;
+        padding: 20px 10px !important;
+    }
+
+    #heblock, #kruzhki {
+        width: 100% !important;
+    }
+
+    /* Сетка цен и таймера (Блок .sta) */
+    .sta {
+        flex-direction: column !important;
+        gap: 20px !important;
+        align-items: stretch !important;
+    }
+
+    .timer {
+        justify-content: center !important;
+    }
+
+    /* 5. Блок «Другие аукционы» (.cards) */
+    .cards {
+        grid-template-columns: 1fr !important; /* Строго по одной карточке в ряд */
+        justify-items: center !important;
+        gap: 20px !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 340px !important;
+    }
+
+    /* 6. Блок «Новые пластинки» (.plastin) */
+    .plastin {
+        grid-template-columns: 1fr !important; /* Пластинки встают друг под друга */
+        justify-items: center !important;
+        gap: 30px !important;
+    }
+
+    .plascard {
+        width: 100% !important;
+        max-width: 280px !important; /* Корректируем под размер крутящихся дисков */
+    }
+
+    /* Переключатель страниц (.list) */
+    .list {
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    /* 7. Форма подписки (#rass) */
+    #rass .container {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+
+    #rass form {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 10px !important;
+    }
+
+    #rass input, #rass button {
+        width: 100% !important;
+    }
+
+    /* 8. Подвал сайта (#allfooter) */
+    #allfooter .container {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+
+    #allfooter .menu {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+}
